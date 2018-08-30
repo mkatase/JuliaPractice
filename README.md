@@ -5,12 +5,20 @@
 
 ## Code Abstract
 * hello.jl       : Hello World code
-* practice_01.jl : Read data (without header) and display
-* practice_02.jl : Read data (with header) and display
+* practice_00.jl : Read data (without header) and display
+* practice_01.jl : Read data (without header) using csvread and display 
+* practice_02.jl : Read data (with header) using csvread and display
+* practice_03.jl : Add system types
+* practice_04.jl : Download image file for internet
+* practice_05.jl : SQLite demo
 
 ## How to use
 ```
 $ ./hello.jl
-$ ./pracitice_01.jl ./data/elements.csv
-$ ./pracitice_02.jl ./data/elements_with_header.csv
+$ ./practice_00.jl ./data/elements.csv
+$ ./practice_01.jl ./data/elements.csv
+$ ./practice_02.jl ./data/elements_with_header.csv
+$ ./practice_03.jl ./data/elements_with_header.csv
+$ ./practice_04.jl
+$ ./practice_05.jp ./data/elements.csv test.db
 ```
