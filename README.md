@@ -1,6 +1,6 @@
 # My practice code for Julia
 ## Environment
-* Fedora 28 4.17.14-202
+* Fedora 28 4.17.19-200
 * Julia 0.6.3
 
 ## Code Abstract
@@ -11,6 +11,10 @@
 * practice_03.jl : Add system types
 * practice_04.jl : Download image file for internet
 * practice_05.jl : SQLite demo
+* practice_06.jl : PyCall demo (loading module)
+* practice_07.jl : PyCall demo (loading class)
+* practice_08.jl : PyCall demo (loading inlined class)
+* practice_09.jl : PyCall demo (separated 08)
 
 ## How to use
 ```
@@ -20,5 +24,9 @@ $ ./practice_01.jl ./data/elements.csv
 $ ./practice_02.jl ./data/elements_with_header.csv
 $ ./practice_03.jl ./data/elements_with_header.csv
 $ ./practice_04.jl
-$ ./practice_05.jp ./data/elements.csv test.db
+$ ./practice_05.jl ./data/elements.csv test.db
+$ ./practice_06.jl
+$ ./practice_07.jl
+$ ./practice_08.jl
+$ ./practice_09.jl
 ```

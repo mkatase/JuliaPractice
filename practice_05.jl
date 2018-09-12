@@ -47,6 +47,7 @@ end
     
 function printset(db)
     n = "select * from elements "
+
     println("=== Group 3 ===")
     s = n * "where gnum=3"
     m = SQLite.query(db, s)
@@ -58,6 +59,7 @@ function printset(db)
     m = SQLite.query(db, s)
     (r,c) = size(m)
     printout(r, m)
+
 end
 
 if length(ARGS) == 2
