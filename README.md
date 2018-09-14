@@ -61,15 +61,15 @@ $ export LD_LIBRARY_PATH=./lib/libc/:$LD_LIBRARY_PATH
 ## 
 ## How to use for Julia 0.6.3
 ```
-$ ./hello.jl
-$ ./practice_00.jl ./data/elements.csv
-$ ./practice_01.jl ./data/elements.csv
-$ ./practice_02.jl ./data/elements_with_header.csv
-$ ./practice_03.jl ./data/elements_with_header.csv
-$ ./practice_04.jl
-$ ./practice_05.jl ./data/elements.csv test.db
-$ ./practice_06.jl
-$ ./practice_07.jl
-$ ./practice_08.jl
-$ ./practice_09.jl
+$ ./src/hello.jl
+$ ./src/practice_00.jl ./data/elements.csv
+$ ./src/practice_01.jl ./data/elements.csv
+$ ./src/practice_02.jl ./data/elements_with_header.csv
+$ ./src/practice_03.jl ./data/elements_with_header.csv
+$ ./src/practice_04.jl
+$ ./src/practice_05.jl ./data/elements.csv test.db
+$ ./src/practice_06.jl
+$ ./src/practice_07.jl
+$ ./src/practice_08.jl
+$ ./src/practice_09.jl
 ```
