@@ -5,7 +5,7 @@ include("lib/libj/Testfour.jl")
 
 u = Testfour()
 
-u[:printout]()
+u[:display]()
 
 o = u[:calc]()
 println(o)

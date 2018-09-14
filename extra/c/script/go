@@ -1,0 +1,6 @@
+#gcc -fPIC -shared display.c -o libdisplay.so 
+#gcc -fPIC -shared calc.c -o libcalc.so
+gcc -fPIC -c display.c
+gcc -fPIC -c calc.c
+gcc -fPIC -shared display.o calc.o -o libtestone.so 
+gcc -I. -L. main.c -ltestone

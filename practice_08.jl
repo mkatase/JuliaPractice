@@ -7,7 +7,7 @@ using PyCall
         self[:x] = 5
     end
 
-    function printout(self)
+    function display(self)
         println("TestThree Class...")
     end
 
@@ -20,7 +20,7 @@ end
 
 u = Testthree()
 
-u[:printout]()
+u[:display]()
 
 o = u[:calc]()
 println(o)

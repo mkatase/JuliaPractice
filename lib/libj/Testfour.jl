@@ -6,7 +6,7 @@
         self[:x] = 5
     end
 
-    function printout(self)
+    function display(self)
         println("TestFour Class...")
     end
 

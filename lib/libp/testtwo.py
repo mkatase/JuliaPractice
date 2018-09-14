@@ -3,7 +3,7 @@ class Testtwo:
     def __init__(self):
         self.x = 5
 
-    def printout(self):
+    def display(self):
         print("TestTwo Class...")
 
     def calc(self):
@@ -15,6 +15,6 @@ class Testtwo:
 if __name__ == '__main__':
     u = Testtwo()
 
-    u.printout()
+    u.display()
     print(u.calc())
     print(u.hello("Test Class"))

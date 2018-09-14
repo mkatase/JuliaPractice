@@ -1,9 +1,11 @@
 #!/usr/bin/env julia
 #
+using DelimitedFiles
+using Printf
 using SQLite
 
 function readfile(filename)
-    (L,H) = readcsv(filename, header=true, comments=true, comment_char='#')
+    (L,H) = readdlm(filename, ','; header=true, comments=true, comment_char='#')
     L
 end
 
@@ -30,7 +32,7 @@ function insertdb(db, L)
     (rnum, cnum) = size(L)
     for i = 1:rnum
         N = L[i,:]
-        unshift!(N,i)
+        pushfirst!(N,i)
         #println(i,L[i,:])
         #println(i,N)
         SQLite.query(db, n; values=N)

@@ -15,7 +15,7 @@ function readfile(filename)
     L
 end
 
-function printout(L)
+function dipslay(L)
     for n in L
         println(n[1], " ", n[6])
     end
@@ -23,7 +23,7 @@ end
 
 if length(ARGS) != 0
     L = readfile(ARGS[1])
-    printout(L)
+    display(L)
 else
     exit()
 end

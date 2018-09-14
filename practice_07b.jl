@@ -2,7 +2,7 @@
 #
 using PyCall
 
-unshift!(PyVector(pyimport("sys")["path"]), "")
+pushfirst!(PyVector(pyimport("sys")["path"]), "")
 @pyimport lib.libp.testtwo as t
 
 u = t.Testtwo()
