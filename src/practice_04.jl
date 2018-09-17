@@ -4,7 +4,6 @@ using HTTP
 
 function getname(uname)
     n = rsearch(uname, '/')
-    #println(n)
     uname[n+1:end]
 end
 

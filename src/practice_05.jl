@@ -8,11 +8,11 @@ function readfile(filename)
 end
 
 function checkfile(dbname)
-    return SQLite.DB( dbname )
+    return SQLite.DB(dbname)
 end
 
 function createtbl(db)
-    r = SQLite.tables( db )
+    r = SQLite.tables(db)
     if !( "elements" in r[:name] )
         s = "create table elements "
         s = s * "(id integer primary key, name text not null,"
@@ -30,18 +30,14 @@ function insertdb(db, L)
     (rnum, cnum) = size(L)
     for i = 1:rnum
         N = L[i,:]
-        unshift!(N,i)
-        #println(i,L[i,:])
-        #println(i,N)
+        unshift!(N, i)
         SQLite.query(db, n; values=N)
     end
 end
 
 function display(r,m)
     for i in 1:r
-        #println(r,m[i,:])
-        #println(r,m[1][i],m[2][i],m[6][i])
-        @printf("%16s : %s\n",m[2][i],m[7][i])
+        @printf("%16s : %s\n", m[2][i], m[7][i])
     end
 end
     
@@ -51,13 +47,13 @@ function printset(db)
     println("=== Group 3 ===")
     s = n * "where gnum=3"
     m = SQLite.query(db, s)
-    (r,c) = size(m)
+    (r, c) = size(m)
     display(r, m)
 
     println("=== Group 3A ===")
     s = n * "where gnum=\"3A\""
     m = SQLite.query(db, s)
-    (r,c) = size(m)
+    (r, c) = size(m)
     display(r, m)
 
 end

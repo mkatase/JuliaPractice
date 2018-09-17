@@ -4,7 +4,6 @@ using HTTP
 
 function getname(uname)
     n = something(findlast(isequal('/'), uname), 0)
-    #println(n)
     uname[n+1:end]
 end
 

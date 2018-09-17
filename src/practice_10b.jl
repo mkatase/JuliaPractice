@@ -1,6 +1,8 @@
 #!/usr/bin/env julia
 #
 
+push!(Base.DL_LOAD_PATH, "./lib/libc")
+
 ccall((:display, "libextrac"), Nothing, ())
 
 println("-----")

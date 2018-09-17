@@ -6,7 +6,7 @@ using Printf
 function readfile(filename)
     (L,H) = readdlm(filename,','; header=true, comments=true, comment_char='#')
     (rnum, cnum) = size(L)
-    @printf("(row,col)=(%d,%d)\n",rnum,cnum)
+    @printf("(row,col)=(%d,%d)\n", rnum, cnum)
     println(H)
     println()
     for i = 1:rnum

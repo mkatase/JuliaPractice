@@ -1,9 +1,9 @@
-# My practice code for Julia 0.6.3/0.7.0/1.0.0
+# My practice code for Julia 0.6.3/0.7.0/1.0.0/1.1-DEV
 
 ## Environment
 
-* Fedora 28 4.17.19-200
-* Julia 0.6.3/0.7.0/1.0.0
+* Fedora 28 4.18.7-200
+* Julia 0.6.3/0.7.0/1.0.0/1.1-DEV(copr)
 * cmake 3.11.2
 * gcc 8.1.1
 
@@ -19,6 +19,7 @@
 * practice_07.jl : PyCall demo (loading class)
 * practice_08.jl : PyCall demo (loading inlined class)
 * practice_09.jl : PyCall demo (separated 08)
+* practice_10.jl : C Expansion demo
 
 ## Code Abstract for Julia 0.7.0/1.0.0
 * practice_01b.jl : same as practice_01.jl
@@ -58,6 +59,20 @@ $ cp lib/libextrac.so ../../../lib/libc/
 $ export LD_LIBRARY_PATH=./lib/libc/:$LD_LIBRARY_PATH
 ```
 
+or
+
+```
+# for Julia 0.6.3
+push!(Libdl.DL_LOAD_PATH, "./lib/libc/")
+```
+
+or
+
+```
+# for Julia 0.7.0/1.0.0/1.1-DEV
+push!(Base.DL_LOAD_PATH, "./lib/libc")
+```
+
 ## 
 ## How to use for Julia 0.6.3
 ```
@@ -72,4 +87,5 @@ $ ./src/practice_06.jl
 $ ./src/practice_07.jl
 $ ./src/practice_08.jl
 $ ./src/practice_09.jl
+$ ./src/practice_10.jl
 ```
