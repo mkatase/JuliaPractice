@@ -6,6 +6,7 @@
 * Julia 0.6.3/0.7.0/1.0.0/1.1-DEV(copr)
 * cmake 3.11.2
 * gcc 8.1.1
+* gfortran 8.1.1
 
 ## Code Abstract for Julia 0.6.3
 * hello.jl       : Hello World code
@@ -30,12 +31,19 @@
 * practice_06b.jl : same as practice_06.jl
 * practice_07b.jl : same as practice_07.jl
 * practice_10b.jl : same as practice_10.jl
+* practice_11b.jl : Fortran Expansion demo
 
-## Three functions for Python/C
+## Three functions for C
 
 - display function: output string (void return)
 - calc function: Square calculation (integer return)
 - hello function: output string to add any string (string return)
+
+## Three functions for Fortran
+- display function: output string (void return)
+- calc function: multiplication (subroutine based)
+- foo function: 1-dimensional addition (module based)
+- moo function: 2-dimensional addition (module based)
 
 # Don't output __pycache__ directory
 
@@ -52,6 +60,16 @@ $ cd build
 $ cmake ..
 $ make
 $ cp lib/libextrac.so ../../../lib/libc/ 
+```
+
+# How to build Fortran shared library
+```
+$ cd extra/f
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+$ cp lib/libextraf.so ../../../lib/libf/
 ```
 
 ## How to use C shared library
@@ -73,7 +91,6 @@ or
 push!(Base.DL_LOAD_PATH, "./lib/libc")
 ```
 
-## 
 ## How to use for Julia 0.6.3
 ```
 $ ./src/hello.jl
