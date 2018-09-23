@@ -2,7 +2,7 @@
 
 ## Environment
 
-* Fedora 28 4.18.7-200
+* Fedora 28 4.18.9-200
 * Julia 0.6.3/0.7.0/1.0.0/1.1-DEV(copr)
 * cmake 3.11.2
 * gcc 8.1.1
