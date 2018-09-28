@@ -3,9 +3,9 @@
 using PyCall
 
 pushfirst!(PyVector(pyimport("sys")["path"]), "")
-@pyimport lib.libp.testone as t
+t = pyimport("lib.libp.testone")
 
-println(t.hello())
+println(t[:hello]())
 
-o = t.calc(3)
+o = t[:calc](3)
 println(o)

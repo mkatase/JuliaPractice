@@ -3,9 +3,9 @@
 using PyCall
 
 pushfirst!(PyVector(pyimport("sys")["path"]), "")
-@pyimport lib.libp.testtwo as t
+t = pyimport("lib.libp.testtwo")
 
-u = t.Testtwo()
+u = t[:Testtwo]()
 
 u[:display]()
 
