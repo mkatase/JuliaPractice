@@ -2,8 +2,8 @@
 
 ## Environment
 
-* Fedora 28 4.18.9-200
-* Julia 0.6.3/0.7.0/1.0.0/1.1-DEV(copr)
+* Fedora 28 4.18.12-200
+* Julia 0.6.3/0.7.0/1.0.1/1.1.0-DEV(copr)
 * cmake 3.11.2
 * gcc 8.1.1
 * gfortran 8.1.1
@@ -22,7 +22,7 @@
 * practice_09.jl : PyCall demo (separated 08)
 * practice_10.jl : C Expansion demo
 
-## Code Abstract for Julia 0.7.0/1.0.0
+## Code Abstract for Julia 0.7.0/1.0.1/1.1.0-DEV
 * practice_01b.jl : same as practice_01.jl
 * practice_02b.jl : same as practice_02.jl
 * practice_03b.jl : same as practice_03.jl
@@ -87,7 +87,7 @@ push!(Libdl.DL_LOAD_PATH, "./lib/libc/")
 or
 
 ```
-# for Julia 0.7.0/1.0.0/1.1-DEV
+# for Julia 0.7.0/1.0.1/1.1-DEV
 push!(Base.DL_LOAD_PATH, "./lib/libc")
 ```
 
