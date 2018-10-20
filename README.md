@@ -5,8 +5,8 @@
 * Fedora 28 4.18.14-200
 * Julia 0.6.3/0.7.0/1.0.1/1.1.0-DEV(copr)
 * cmake 3.11.2
-* gcc 8.1.1
-* gfortran 8.1.1
+* gcc 8.2.1
+* gfortran 8.2.1
 
 ## Code Abstract for Julia 0.6.3
 * hello.jl       : Hello World code
