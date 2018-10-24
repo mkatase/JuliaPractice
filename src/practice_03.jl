@@ -1,7 +1,7 @@
 #!/usr/bin/env julia
 #
 
-include("./lib/libj/Element.jl")
+include("../lib/libj/Element.jl")
 
 function readfile(filename)
     (L,H) = readcsv(filename, header=true, comments=true, comment_char='#')

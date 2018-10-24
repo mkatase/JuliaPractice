@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Drawing Canvas</title>
+
+<script type="text/javascript">
+<!--
+function sample() {
+    var canvas = document.getElementById('sample1');
+
+    if (canvas.getContext) {
+        var context = canvas.getContext('2d');
+
+        context.strokeStyle = 'rgb(00,00,00)';
+        context.strokeRect(10,10,100,50);
+        context.fillStyle = 'rgba(255,00,00,0.1)';
+        context.fillRect(10,10,100,50);
+
+        context.beginPath();
+        context.arc(150,20,10,0,Math.PI*2.0,true);
+        context.stroke();
+        context.fillStyle = 'rgba(00,00,255,0.1)';
+        context.fill(); 
+    } 
+}
+//-->
+</script>
+</head>
+<body onLoad="sample()">
+<h2>Drawing Canvas</h2>
+<canvas id="sample1" width="200" height="200"></canvas>
+</body>
+</html>

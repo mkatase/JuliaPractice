@@ -1,7 +1,7 @@
 #!/usr/bin/env julia
 #
 using PyCall
-include("lib/libj/Testfour.jl")
+include("../lib/libj/Testfour.jl")
 
 u = Testfour()
 

@@ -7,6 +7,7 @@
 * cmake 3.11.2
 * gcc 8.2.1
 * gfortran 8.2.1
+* pyside 1.2.4
 
 ## Code Abstract for Julia 0.6.3
 * hello.jl       : Hello World code
@@ -33,6 +34,7 @@
 * practice_10b.jl : same as practice_10.jl
 * practice_11b.jl : Fortran Expansion demo
 * practice_12b.jl : Button Example using Gtk.jl
+* practice_13b.jl : WebKit Example using PySide on Python
 
 ## Three functions for C
 

@@ -3,7 +3,7 @@
 using DelimitedFiles
 using Printf
 
-include("./lib/libj/ElementB.jl")
+include("../lib/libj/ElementB.jl")
 
 function readfile(filename)
     (L,H) = readdlm(filename, ','; header=true, comments=true, comment_char='#')
