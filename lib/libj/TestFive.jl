@@ -20,7 +20,11 @@
         view = w.QWebView()
         view[:setGeometry](self[:x], self[:y], self[:w], self[:h])
         view[:setWindowTitle](self[:t])
-        view[:setHtml](self[:m])
+        if self[:m] == ""
+            view[:load](c.QUrl(self[:u]))
+        else
+            view[:setHtml](self[:m])
+        end
         view[:show]()
         app[:exec_]()
     end
