@@ -1,8 +1,8 @@
-# My practice code for Julia 0.6.3/0.7.0/1.0.0/1.1-DEV
+# My practice code for Julia 0.6.3/1.0.2/1.1-DEV
 
 ## Environment
 
-* Fedora 29 4.18.16-300
+* Fedora 29 4.19.2-300
 * Julia 0.6.3/1.0.1/1.1.0-DEV(copr)
 * cmake 3.12.1
 * gcc 8.2.1
