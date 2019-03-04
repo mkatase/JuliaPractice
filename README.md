@@ -2,11 +2,11 @@
 
 ## Environment
 
-* Fedora 29 4.19.2-300
+* Fedora 29 **4.20.13-200**
 * Julia 0.6.3/1.0.1/1.1.0-DEV(copr)
 * cmake 3.12.1
-* gcc 8.2.1
-* gfortran 8.2.1
+* gcc **8.3.1**
+* gfortran **8.3.1**
 * pyside 1.2.4
 
 ## Code Abstract for Julia 0.6.3
