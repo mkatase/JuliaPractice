@@ -1,4 +1,7 @@
 
+# 2019-11-05
+* modified some codes for Julia 1.2
+
 # 2018-10-24
 * add to practice 13b sample (WebKit)
 
