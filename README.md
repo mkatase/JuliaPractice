@@ -1,15 +1,15 @@
-# My practice code for Julia 0.6.3/1.0.2/1.1-DEV
+# My practice code for Julia 1.2
 
 ## Environment
 
-* Fedora 29 **4.20.13-200**
-* Julia 0.6.3/1.0.1/1.1.0-DEV(copr)
-* cmake 3.12.1
-* gcc **8.3.1**
-* gfortran **8.3.1**
+* Fedora 31 **5.3.7-301**
+* Julia **1.2**
+* cmake 3.14.5
+* gcc **9.2.1**
+* gfortran **9.2.1**
 * pyside 1.2.4
 
-## Code Abstract for Julia 0.6.3
+## Code Abstract for Julia 0.6.3 (Obosoleted)
 * hello.jl       : Hello World code
 * practice_00.jl : Read data (without header) and display
 * practice_01.jl : Read data (without header) using csvread and display 
@@ -23,7 +23,7 @@
 * practice_09.jl : PyCall demo (separated 08)
 * practice_10.jl : C Expansion demo
 
-## Code Abstract for Julia 1.0.1/1.1.0-DEV
+## Code Abstract for Julia 1.0.1/1.1.0-DEV (Obosoleted)
 * practice_01b.jl : same as practice_01.jl
 * practice_02b.jl : same as practice_02.jl
 * practice_03b.jl : same as practice_03.jl
@@ -35,6 +35,13 @@
 * practice_11b.jl : Fortran Expansion demo
 * practice_12b.jl : Button Example using Gtk.jl
 * practice_13b.jl : WebKit Example using PySide on Python
+
+## Code Abstract for Julia 1.2
+* practice_06c.jl : same as practice_06.jl
+* practice_07c.jl : same as practice_07.jl
+* practice_08c.jl : same as practice_08.jl
+* practice_09c.jl : same as practice_09.jl
+* practice_13c.jl : same as practice_13b.jl
 
 ## Three functions for C
 
@@ -108,4 +115,13 @@ $ ./src/practice_07.jl
 $ ./src/practice_08.jl
 $ ./src/practice_09.jl
 $ ./src/practice_10.jl
+```
+
+## How to use for Julia 1.2
+```
+$ ./src/practice_06c.jl
+$ ./src/practice_07c.jl
+$ ./src/practice_08c.jl
+$ ./src/practice_09c.jl
+$ ./src/practice_13c.jl
 ```
