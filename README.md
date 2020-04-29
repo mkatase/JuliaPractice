@@ -1,12 +1,12 @@
-# My practice code for Julia 1.2
+# My practice code for Julia 1.4
 
 ## Environment
 
-* Fedora 31 **5.3.7-301**
-* Julia **1.2**
-* cmake 3.14.5
-* gcc **9.2.1**
-* gfortran **9.2.1**
+* Fedora 32 **5.6.7-300**
+* Julia **1.4**
+* cmake **3.17.1**
+* gcc **10.0.1**
+* gfortran **10.0.1**
 * pyside 1.2.4
 
 ## Code Abstract for Julia 0.6.3 (Obosoleted)
@@ -36,7 +36,7 @@
 * practice_12b.jl : Button Example using Gtk.jl
 * practice_13b.jl : WebKit Example using PySide on Python
 
-## Code Abstract for Julia 1.2
+## Code Abstract for Julia 1.4
 * practice_06c.jl : same as practice_06.jl
 * practice_07c.jl : same as practice_07.jl
 * practice_08c.jl : same as practice_08.jl
@@ -117,7 +117,7 @@ $ ./src/practice_09.jl
 $ ./src/practice_10.jl
 ```
 
-## How to use for Julia 1.2
+## How to use for Julia 1.4
 ```
 $ ./src/practice_06c.jl
 $ ./src/practice_07c.jl
@@ -125,3 +125,5 @@ $ ./src/practice_08c.jl
 $ ./src/practice_09c.jl
 $ ./src/practice_13c.jl
 ```
+
+05,12b and 13c code are cheching now.
